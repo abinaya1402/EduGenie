@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduGenie – AI Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1><span class="genie">🎓</span> EduGenie</h1>
+      <p>Your AI-Powered Learning Assistant</p>
+    </header>
+
+    <div class="features" id="features">
+      <button class="feature" data-task="explain" style="--c:#f39c12"><span>💡</span><b>Explain</b><small>Understand difficult topics easily</small></button>
+      <button class="feature" data-task="qa" style="--c:#e84393"><span>❓</span><b>Q&amp;A</b><small>Get answers to your questions</small></button>
+      <button class="feature" data-task="quiz" style="--c:#00b894"><span>📝</span><b>Quiz</b><small>Test your knowledge</small></button>
+      <button class="feature" data-task="summary" style="--c:#0984e3"><span>📚</span><b>Summary</b><small>Summarize long study material</small></button>
+      <button class="feature" data-task="path" style="--c:#6c5ce7"><span>🚀</span><b>Learning Path</b><small>Get a personalized study path</small></button>
+    </div>
+
+    <main class="main-card">
+      <h2>✨ Learn Smarter with EduGenie</h2>
+      <p class="muted">Select a learning task and enter your topic.</p>
+
+      <label for="task">Choose what you want EduGenie to do</label>
+      <select id="task">
+        <option value="explain">💡 Explain a Topic</option>
+        <option value="qa">❓ Ask a Question</option>
+        <option value="quiz">📝 Generate a Quiz</option>
+        <option value="summary">📚 Summarize Text</option>
+        <option value="path">🚀 Learning Path</option>
+      </select>
+
+      <label for="text">Enter your topic or text</label>
+      <textarea id="text" rows="5" placeholder="Example: Explain photosynthesis in simple words"></textarea>
+
+      <button id="generate" class="go">✨ Generate with EduGenie</button>
+
+      <h2 class="result-title">🤖 EduGenie Result</h2>
+      <div id="result" class="result"><p class="muted">Your answer will appear here.</p></div>
+    </main>
+
+    <footer class="footer">🎓 EduGenie • Google Gemini Powered Learning Assistant</footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
